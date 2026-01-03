@@ -1,98 +1,21 @@
 # Learn Helper
 
-[![GitHub Action Build](https://github.com/Harry-Chen/Learn-Helper/workflows/Build/badge.svg)](https://github.com/Harry-Chen/Learn-Helper/actions)
-[![GitHub release](https://img.shields.io/github/v/release/Harry-Chen/Learn-Helper)](https://github.com/Harry-Chen/Learn-Helper)
+本项目基于[Harry-Chen/Learn-Helper: 清华大学网络学堂助手](https://github.com/Harry-Chen/Learn-Helper)开发，主要增加了一些学期作业情况统计和可视化功能，主要包括以下内容：
 
-[![Chrome Web Store version](https://img.shields.io/chrome-web-store/v/mdehapphdlihjjgkhmoiknmnhcjpjall)](https://chrome.google.com/webstore/detail/learn-helper/mdehapphdlihjjgkhmoiknmnhcjpjall)
-![Chrome Web Store users](https://img.shields.io/chrome-web-store/users/mdehapphdlihjjgkhmoiknmnhcjpjall)
-![Chrome Web Store rating](https://img.shields.io/chrome-web-store/rating/mdehapphdlihjjgkhmoiknmnhcjpjall)
+- **作业提交统计**
 
-[![Firefox Add-ons version](https://img.shields.io/amo/v/thu-learn-helper)](https://addons.mozilla.org/en-US/firefox/addon/thu-learn-helper)
-![Firefox Add-ons downloads](https://img.shields.io/amo/dw/thu-learn-helper)
-![Firefox Add-ons users](https://img.shields.io/amo/users/thu-learn-helper)
-![Firefox Add-ons rating](https://img.shields.io/amo/rating/thu-learn-helper)
+​	作业总数，提交率，夜间提交占比，周末提交占比等指标
 
-A browser extension for [Web Learning](https://learn.tsinghua.edu.cn) of Tsinghua University.
+- **提交日历热力图**
+- **提交时间热力图（周-小时）**
+- **提交时间线（最近30天）**
+- **提交星期分布**
+- **提交延时图** 
+- **未提交作业风险分布**
+- **提交时段分布（小时）**
+- **附件大小分布**
+- **个人拖延画像**
+- **最近提交**
 
-## Authors & Maintainers
+期末周仓促摸鱼并在AI辅助下完成，纰漏甚多，欢迎大家多提issue lol
 
-* [AsakuraMizu](https://github.com/AsakuraMizu)
-  * current maintainer
-  * developer from v4.6.0
-* [Harry-Chen](https://github.com/Harry-Chen)
-  * current maintainer
-  * developer of v4.0.0 - v4.5.1
-* [xxr3376](https://github.com/xxr3376)
-  * original author
-  * developer till v3.3.1
-
-## Install
-
-- [Chrome Web Store](https://chrome.google.com/webstore/detail/learn-helper/mdehapphdlihjjgkhmoiknmnhcjpjall)
-- [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/dhddjfhadejlhiaafnbadhaeichbkgil)
-- [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/thu-learn-helper) ([Self-hosted version](https://harrychen.xyz/learn/))
-
-Or you can install the unpacked version from releases.
-
-## License
-
-This project is licensed under the terms of MIT License from version 4.0.3 __EXCLUDING any of the following conditions__:
-
-* You are working / have worked for *Informatization Office* or *Information Technology Center* of Tsinghua University.
-* Your project is funded or supported in any way by an affiliate of Tsinghua University or any other institution associated with Tsinghua University.
-
-If any of these criteria is met, any use of code, without explicit authorization from the authors, from this project will be considered as infringement of copyright. The word ‘use’ may refer to making copies of, modifying, redistributing of the source code or derivatives (such as browser extension) of this project, whether or not for commercial use. However you can still install and run the browser extension released by the author without being constrained by this exception.
-
-## 版权说明
-
-本项目从 4.0.3 版本起，依照 MIT License 开源，但 __不包含下列任意情况__：
-
-* 您过去或者目前为清华大学信息化工作办公室或信息化技术中心工作；
-* 您的项目受到清华大学的下属机构或其他任何与清华大学有关的机构的任何形式的资助或支持。
-
-如果上述任意条件成立，任何未经授权的对本项目中代码的使用将会被认为是侵权。上文中的“使用”包括对项目的源代码或衍生品（如浏览器插件）制作拷贝、修改、重分发，无论是否用作商业用途。但安装并运行作者发布的浏览器插件的行为不受此例外约束。
-
-## Features
-
-* provide a Evernote-like materialized UI
-* collect all data of Web Learning
-  * Homework
-  * Notification
-  * File
-  * Discussion
-  * Question
-* provide new message reminder and highlight messages
-* provide a `Priority Inbox` like Gmail
-* provide a off-line mode, cache all message that you have already read
-
-## Build
-
-Learn Helper is built using `pnpm`:
-
-```bash
-pnpm install
-
-# build unpacked
-pnpm build:chrome
-pnpm build:firefox
-
-# build packed zip
-pnpm zip:chrome
-pnpm zip:firefox
-```
-
-## Development
-
-```bash
-pnpm dev
-```
-
-Due to technical restrictions, dev mode works only for chrome.
-
-### Auto login
-
-Copy `.env.development` to `.env.development.local` and fill in your username & password to login automatically on start. (development mode only)
-
-## Revision History
-
-See [CHANGELOG.md](https://github.com/Harry-Chen/Learn-Helper/blob/master/CHANGELOG.md).
