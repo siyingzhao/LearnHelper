@@ -63,6 +63,7 @@ import { formatSemester } from '../utils/format';
 import Content from './content';
 import Doc from './doc/_doc';
 import ContentIgnoreSetting from './settings';
+import Analytics from './analytics';
 import Web from './web';
 import Welcome from './welcome';
 
@@ -388,6 +389,7 @@ const App = () => {
             <Switch>
               <Route path="/" component={Welcome} />
               <Route path="/settings" component={ContentIgnoreSetting} />
+              <Route path="/analytics" component={Analytics} />
               <Route path="/web/:url" component={Web} />
               <Route path="/content/:type/:id" component={Content} />
               <Route path="/doc" nest component={Doc} />

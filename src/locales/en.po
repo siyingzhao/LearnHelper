@@ -741,3 +741,441 @@ msgstr "Web-Learning"
 #: src/utils/format.ts:151
 msgid "无需在网络学堂提交"
 msgstr "Offline"
+
+msgid "0-6小时"
+msgstr "0-6 hours"
+
+msgid "1-3天"
+msgstr "1-3 days"
+
+msgid "3天以上"
+msgstr "3+ days"
+
+msgid "6-24小时"
+msgstr "6-24 hours"
+
+msgid "<6小时"
+msgstr "<6 hours"
+
+msgid "个人拖延画像"
+msgstr "Procrastination Profile"
+
+msgid "临界型"
+msgstr "Borderline"
+
+msgid "临近截止占比"
+msgstr "Near-deadline share"
+
+msgid "作业总数"
+msgstr "Total assignments"
+
+msgid "作业提交统计"
+msgstr "Assignment Submission Stats"
+
+msgid "停停催催，偶尔压线"
+msgstr "Procrastinate sometimes, occasional deadline rush"
+
+msgid "冲刺型"
+msgstr "Sprinter"
+
+msgid "刷新数据"
+msgstr "Refresh data"
+
+msgid "含附件作业"
+msgstr "With attachments"
+
+msgid "周一"
+msgstr "Mon"
+
+msgid "周三"
+msgstr "Wed"
+
+msgid "周二"
+msgstr "Tue"
+
+msgid "周五"
+msgstr "Fri"
+
+msgid "周六"
+msgstr "Sat"
+
+msgid "周四"
+msgstr "Thu"
+
+msgid "周日"
+msgstr "Sun"
+
+msgid "周末提交"
+msgstr "Weekend submissions"
+
+msgid "周末提交占比"
+msgstr "Weekend share"
+
+msgid "多在截止前提交"
+msgstr "Mostly before deadline"
+
+msgid "夜间提交"
+msgstr "Night submissions"
+
+msgid "夜间提交占比"
+msgstr "Night share"
+
+msgid "常在最后时刻提交"
+msgstr "Often at the last moment"
+
+msgid "平均提前提交"
+msgstr "Avg lead time"
+
+msgid "当前学期："
+msgstr "Current semester:"
+
+msgid "截止前24小时"
+msgstr "Within 24h before deadline"
+
+msgid "截止前6小时"
+msgstr "Within 6h before deadline"
+
+msgid "截止前提交分布"
+msgstr "Lead time distribution"
+
+msgid "提交日历热力图"
+msgstr "Submission calendar heatmap"
+
+msgid "提交时段分布（小时）"
+msgstr "Submission by hour"
+
+msgid "提交时间热力图（周-小时）"
+msgstr "Submission heatmap (weekday-hour)"
+
+msgid "提交时间线（最近30天）"
+msgstr "Submission timeline (last 30 days)"
+
+msgid "提交星期分布"
+msgstr "Submission by weekday"
+
+msgid "提交率"
+msgstr "Submission rate"
+
+msgid "提前规划，很少拖延"
+msgstr "Plans ahead, rarely procrastinates"
+
+msgid "暂无提交记录"
+msgstr "No submission records"
+
+msgid "暂无数据"
+msgstr "No data"
+
+msgid "最后更新时间："
+msgstr "Last updated:"
+
+msgid "最近提交"
+msgstr "Recent submissions"
+
+msgid "最长连续提交"
+msgstr "Longest streak"
+
+msgid "未提交作业"
+msgstr "Unsubmitted assignments"
+
+msgid "未提交作业风险分布"
+msgstr "Unsubmitted risk distribution"
+
+msgid "极限型"
+msgstr "Extreme"
+
+msgid "活跃提交天数"
+msgstr "Active days"
+
+msgid "稳健型"
+msgstr "Steady"
+
+msgid "节奏稳定，成品率高"
+msgstr "Stable pace, high completion"
+
+msgid "请先登录后查看统计"
+msgstr "Please log in to view stats"
+
+msgid "超前型"
+msgstr "Early-bird"
+
+msgid "逾期"
+msgstr "Overdue"
+
+msgid "逾期提交"
+msgstr "Late submissions"
+
+msgid "逾期提交占比"
+msgstr "Late share"
+
+msgid "附件大小分布"
+msgstr "Attachment size distribution"
+
+msgid "附件总大小"
+msgstr "Total attachment size"
+
+msgid "/8v7f6"
+msgstr "周六"
+
+msgid "/OGilp"
+msgstr "讨论"
+
+msgid "0MNh4X"
+msgstr "极限型"
+
+msgid "1QIxK8"
+msgstr "课程答疑"
+
+msgid "3mYcd/"
+msgstr "全部标记已读"
+
+msgid "3rpoLk"
+msgstr "多在截止前提交"
+
+msgid "4zjCX9"
+msgstr "课程综合"
+
+msgid "5DkJBE"
+msgstr "截止前24小时"
+
+msgid "5KiZcz"
+msgstr "课程主页"
+
+msgid "5bz1zZ"
+msgstr "停停催催，偶尔压线"
+
+msgid "7Fh6EZ"
+msgstr "管理隐藏项"
+
+msgid "7vaEBA"
+msgstr "1-3天"
+
+msgid "8/N6eW"
+msgstr "暂无数据"
+
+msgid "8Gkyz4"
+msgstr "0-6小时"
+
+msgid "8UNRk6"
+msgstr "所有忽略"
+
+msgid "9v6CCt"
+msgstr "提交时间"
+
+msgid "A+Nxen"
+msgstr "学习统计"
+
+msgid "AFvbIg"
+msgstr "提前规划，很少拖延"
+
+msgid "BujL3g"
+msgstr "夜间提交占比"
+
+msgid "CmWnvo"
+msgstr "<6小时"
+
+msgid "CysfIM"
+msgstr "夜间提交"
+
+msgid "DVj7am"
+msgstr "周末提交占比"
+
+msgid "DeRVn1"
+msgstr "节奏稳定，成品率高"
+
+msgid "GFyiGn"
+msgstr "课程讨论"
+
+msgid "GJq4AS"
+msgstr "周四"
+
+msgid "HkFDzG"
+msgstr "周末提交"
+
+msgid "IHUnKL"
+msgstr "作业总数"
+
+msgid "IyCgI6"
+msgstr "3天以上"
+
+msgid "J7+IdY"
+msgstr "临界型"
+
+msgid "MMsnz3"
+msgstr "周三"
+
+msgid "MSuEg1"
+msgstr "临近截止占比"
+
+msgid "MmPFs0"
+msgstr "含附件作业"
+
+msgid "N2ImfX"
+msgstr "附件大小分布"
+
+msgid "P2y0Qu"
+msgstr "课程"
+
+msgid "P4IIQh"
+msgstr "课程文件"
+
+msgid "P7nEqT"
+msgstr "最近提交"
+
+msgid "P8EcLY"
+msgstr "逾期"
+
+msgid "PCwHo9"
+msgstr "所有讨论"
+
+msgid "PtZ9yN"
+msgstr "暂无提交记录"
+
+msgid "S+k6/I"
+msgstr "退出登录"
+
+msgid "S3F8kk"
+msgstr "切换学期"
+
+msgid "TQX7xt"
+msgstr "活跃提交天数"
+
+msgid "Ue70u6"
+msgstr "冲刺型"
+
+msgid "VmvF/q"
+msgstr "所有答疑"
+
+msgid "X/WTvH"
+msgstr "当前学期："
+
+msgid "XpP95w"
+msgstr "课程作业"
+
+msgid "ZkJwc0"
+msgstr "周日"
+
+msgid "a++iIP"
+msgstr "逾期提交占比"
+
+msgid "a1d5Hp"
+msgstr "最长连续提交"
+
+msgid "aVN1Gf"
+msgstr "提交星期分布"
+
+msgid "b/JZwS"
+msgstr "未提交作业"
+
+msgid "bXDS2+"
+msgstr "所有文件"
+
+msgid "bxDwSy"
+msgstr "清空缓存"
+
+msgid "cTUbMZ"
+msgstr "超前型"
+
+msgid "dNKBDq"
+msgstr "提交时间线（最近30天）"
+
+msgid "e9TKat"
+msgstr "截止前提交分布"
+
+msgid "fd6ScW"
+msgstr "稳健型"
+
+msgid "fqcI6L"
+msgstr "常在最后时刻提交"
+
+msgid "g+Mcpb"
+msgstr "平均提前提交"
+
+msgid "goAD9s"
+msgstr "提交率"
+
+msgid "hZT6SN"
+msgstr "逾期提交"
+
+msgid "hl6Tp+"
+msgstr "周一"
+
+msgid "iWqBzE"
+msgstr "附件总大小"
+
+msgid "ixuPyU"
+msgstr "课程公告"
+
+msgid "jxTzDD"
+msgstr "6-24小时"
+
+msgid "k+w0qb"
+msgstr "作业"
+
+msgid "kwybiZ"
+msgstr "未提交作业风险分布"
+
+msgid "m8RqIw"
+msgstr "提交时间热力图（周-小时）"
+
+msgid "mV6gOF"
+msgstr "所有公告"
+
+msgid "mka+JQ"
+msgstr "周二"
+
+msgid "oLuXG7"
+msgstr "最后更新时间："
+
+msgid "p2Tp7Z"
+msgstr "提交时段分布（小时）"
+
+msgid "pjJ3Cj"
+msgstr "答疑"
+
+msgid "qbow8i"
+msgstr "主页"
+
+msgid "tO3u4r"
+msgstr "刷新数据"
+
+msgid "v+Q3vb"
+msgstr "作业提交统计"
+
+msgid "v0xjpH"
+msgstr "手动刷新"
+
+msgid "vV78Aa"
+msgstr "所有作业"
+
+msgid "vVVHO2"
+msgstr "已提交"
+
+msgid "vuCLLA"
+msgstr "周五"
+
+msgid "w071OP"
+msgstr "截止前6小时"
+
+msgid "x5hnK+"
+msgstr "公告"
+
+msgid "x84i20"
+msgstr "文件"
+
+msgid "xMeklc"
+msgstr "请先登录后查看统计"
+
+msgid "y3HfGM"
+msgstr "个人拖延画像"
+
+msgid "zakr7d"
+msgstr "作业标题"
+
+msgid "7hy5NL"
+msgstr "提交日历热力图"
+
+msgid "c5w6zR"
+msgstr "最近16周，颜色越深表示提交次数越多"
+
+msgid "d0yqxT"
+msgstr "横轴为小时，纵轴为星期"

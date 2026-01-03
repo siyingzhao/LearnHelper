@@ -9,6 +9,7 @@ import {
   ListSubheader,
 } from '@mui/material';
 import { useEffect, useMemo } from 'react';
+import { useLocation } from 'wouter';
 
 import IconThumbtack from '~icons/fa6-solid/thumbtack';
 
@@ -21,6 +22,7 @@ import { selectUnreadMap } from '../redux/selectors';
 const SummaryList = () => {
   const { _ } = useLingui();
   const dispatch = useAppDispatch();
+  const [_location, navigate] = useLocation();
 
   const unreadMap = useAppSelector(selectUnreadMap);
   const unreadTotal = useMemo(
@@ -51,6 +53,10 @@ const SummaryList = () => {
           className={styles.sidebar_list_item}
           key={func.name.id}
           onClick={() => {
+            if (func.handler) {
+              func.handler(dispatch, navigate);
+              return;
+            }
             dispatch(setCardFilter({ type: func.type }));
             dispatch(refreshCardList());
           }}

@@ -6,6 +6,7 @@ import IconBan from '~icons/fa6-solid/ban';
 import IconBullhorn from '~icons/fa6-solid/bullhorn';
 import IconChalkboardUser from '~icons/fa6-solid/chalkboard-user';
 import IconCircleInfo from '~icons/fa6-solid/circle-info';
+import IconChartColumn from '~icons/fa6-solid/chart-column';
 import IconDownload from '~icons/fa6-solid/download';
 import IconEnvelopeOpen from '~icons/fa6-solid/envelope-open';
 import IconHouse from '~icons/fa6-solid/house';
@@ -25,7 +26,7 @@ import {
 } from '../redux/actions';
 import type { AppDispatch } from '../redux/store';
 
-export type TUIFunc = ContentType | 'summary' | 'ignored' | 'homepage';
+export type TUIFunc = ContentType | 'summary' | 'ignored' | 'homepage' | 'analytics';
 
 export const UI_NAME_SUMMARY = {
   summary: msg`主页`,
@@ -109,6 +110,14 @@ export const COURSE_FUNC_LIST = [
 ] as const;
 
 export const SUMMARY_FUNC_LIST = [
+  {
+    type: 'analytics',
+    icon: <IconChartColumn />,
+    name: msg`学习统计`,
+    handler: (_dispatch: AppDispatch, navigate: (path: string) => void) => {
+      navigate('/analytics');
+    },
+  },
   {
     type: undefined,
     icon: <IconHouse />,
