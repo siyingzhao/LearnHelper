@@ -15,6 +15,10 @@
 
 期末周仓促摸鱼并在AI辅助下完成，纰漏甚多，欢迎大家多提issue lol
 
+### 版权说明
+
+项目版权说明完全遵照源项目[Harry-Chen/Learn-Helper: 清华大学网络学堂助手](https://github.com/Harry-Chen/Learn-Helper)。
+
 ### 使用方法
 
 见源项目[Harry-Chen/Learn-Helper: 清华大学网络学堂助手](https://github.com/Harry-Chen/Learn-Helper)。
