@@ -524,13 +524,47 @@ const Analytics = () => {
       const key = formatDateKey(hw.submitTime);
       counts.set(key, (counts.get(key) ?? 0) + 1);
     }
-    const keys = Array.from(counts.keys()).sort();
-    const items = keys.map((key) => {
+
+    const candidateDates = [
+      ...submittedHomeworks.map((hw) => hw.submitTime),
+      ...homeworks.map((hw) => hw.deadline).filter(Boolean),
+    ].filter((date): date is Date => date instanceof Date && !Number.isNaN(date.getTime()));
+
+    if (candidateDates.length === 0) return [];
+
+    const minDate = candidateDates.reduce((min, date) => (date < min ? date : min));
+    const maxDate = candidateDates.reduce((max, date) => (date > max ? date : max));
+
+    const firstDate = semester.startDate instanceof Date ? semester.startDate : undefined;
+    const lastDate = semester.endDate instanceof Date ? semester.endDate : undefined;
+    let start = minDate;
+    let end = maxDate;
+
+    if (firstDate && lastDate) {
+      const startCandidate = new Date(firstDate);
+      const endCandidate = new Date(lastDate);
+      if (endCandidate < startCandidate) {
+        const tmp = startCandidate;
+        startCandidate.setTime(endCandidate.getTime());
+        endCandidate.setTime(tmp.getTime());
+      }
+      const rangeDays = (endCandidate.getTime() - startCandidate.getTime()) / 86400000;
+      if (Number.isFinite(rangeDays) && rangeDays >= 7) {
+        start = startCandidate;
+        end = endCandidate;
+      }
+    }
+
+    const totalDays = Math.max(1, Math.ceil((end.getTime() - start.getTime()) / 86400000) + 1);
+    const items: LineItem[] = [];
+    for (let i = 0; i < totalDays; i += 1) {
+      const date = addDays(start, i);
+      const key = formatDateKey(date);
       const [_, month, day] = key.split('-');
-      return { label: `${month}/${day}`, value: counts.get(key) ?? 0 };
-    });
-    return items.length > 30 ? items.slice(items.length - 30) : items;
-  }, [submittedHomeworks, weekdayLabels]);
+      items.push({ label: `${month}/${day}`, value: counts.get(key) ?? 0 });
+    }
+    return items;
+  }, [submittedHomeworks, homeworks, semester.startDate, semester.endDate]);
 
   const pendingRisk = useMemo(() => {
     const now = Date.now();
@@ -772,9 +806,9 @@ const Analytics = () => {
           max={weeklyHourHeatmap.max}
           rowLabels={weekdayLabels}
         />
-        <LineChart title={t`提交时间线（最近30天）`} items={submissionTrend} />
+        <LineChart title={t`提交时间线（本学期）`} items={submissionTrend} />
         <BarChart title={t`提交星期分布`} items={weekdayBuckets} />
-        <BarChart title={t`提交日历热力图`} items={submissionLagBuckets} />
+        <BarChart title={t`截止前提交分布`} items={submissionLagBuckets} />
         <BarChart title={t`未提交作业风险分布`} items={pendingRisk.items} />
       </div>
 

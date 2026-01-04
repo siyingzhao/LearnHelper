@@ -1179,3 +1179,6 @@ msgstr "最近16周，颜色越深表示提交次数越多"
 
 msgid "d0yqxT"
 msgstr "横轴为小时，纵轴为星期"
+
+msgid "UbfSpg"
+msgstr "提交时间线（本学期）"
